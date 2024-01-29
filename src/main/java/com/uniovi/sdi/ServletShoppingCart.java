@@ -48,7 +48,7 @@ public class ServletShoppingCart extends HttpServlet {
         StringBuilder shoppingCartToHtml = new StringBuilder();
 
         for(String key : cart.keySet())
-            shoppingCartToHtml.append("<p>[").append(key).append("], ").append(cart.get(key)).append(" unidades</p>");
+            shoppingCartToHtml.append("<p>[").append(key).append("],").append(cart.get(key)).append(" unidades</p>");
 
         return shoppingCartToHtml.toString();
     }
