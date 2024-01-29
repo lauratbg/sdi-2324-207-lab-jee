@@ -8,6 +8,11 @@ public class Product {
         this.image = image;
         this.price = price;
     }
+
+    public Product(){
+
+    }
+
     public String getName() {
         return name;
     }
