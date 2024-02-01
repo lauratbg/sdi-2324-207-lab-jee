@@ -26,6 +26,9 @@ public class ServletShoppingCart extends HttpServlet {
 
             // Retornar la vista con parámetro "selectedItems"
             request.setAttribute("selectedItems", cart);
+
+            //este servlet lo está llevando a otro servlet
+            // forward: se pasa el control de manera interna de un servlet a otro servlet
             getServletContext().getRequestDispatcher("/cart.jsp").forward(request, response);
 
             // Eliminado al aplicar el patrón MVC

@@ -29,7 +29,9 @@
 <c:redirect url="/login.jsp"/>
 </c:if>
 
+<%-- Crea un objeto --%>
 <jsp:useBean id="product" class="com.uniovi.sdi.Product"/>
+<%-- Si le pongo un * significa que yo puedo leer todos los atributos que tenga ese bean --%>
 <jsp:setProperty name="product" property="*"/>
 
 <%--<%--%>
@@ -48,6 +50,7 @@
 <!-- Contenido -->
 <div class="container" id="main-container">
   <h2>Agregar producto a la tienda</h2>
+  <!-- Los form siempre con post -->
   <form class="form-horizontal" method="post" action="admin.jsp">
     <div class="form-group">
       <label class="control-label col-sm-2" for="name">Nombre:</label>

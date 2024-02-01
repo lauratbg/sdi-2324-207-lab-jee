@@ -12,6 +12,7 @@ public class GreetingServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws
             ServletException, IOException {
+        //aquí se esta escribiendo en el mismo servlet
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         out.println("<HTML>");

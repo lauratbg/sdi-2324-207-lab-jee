@@ -38,6 +38,11 @@
             <li class="nav-item ">
                 <a class="nav-link" href="admin.jsp">Administrar productos<span class="sr-only">(current)</span></a>
             </li>
+            <!-- Llama al Servlet products-->
+            <li class="nav-item ">
+                <!-- IMPORTANTE!! No llamar aquí a products-view, sino a products que es el servlet -->
+                <a class="nav-link" href="products">Productos<span class="sr-only">(current)</span></a>
+            </li>
         </ul>
         <div class="nav navbar-right">
 <%--            <%=counter%> Visitas--%>
